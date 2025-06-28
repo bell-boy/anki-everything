@@ -4,12 +4,20 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
-    "preview": "vite preview"
+    "build": "webpack",
+    "dev": "webpack --watch",
+    "build:prod": "webpack --mode production"
   },
   "devDependencies": {
+    "@types/chrome": "^0.0.326",
+    "copy-webpack-plugin": "^13.0.0",
+    "html-webpack-plugin": "^5.6.3",
+    "ts-loader": "^9.5.2",
     "typescript": "~5.8.3",
-    "vite": "^7.0.0"
+    "webpack": "^5.99.9",
+    "webpack-cli": "^6.0.1"
+  },
+  "dependencies": {
+    "pdfjs-dist": "^5.3.31"
   }
 }
