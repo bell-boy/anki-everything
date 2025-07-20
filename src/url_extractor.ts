@@ -1,6 +1,6 @@
 import { RequestType, URLResponse } from "./types";
 
-console.log("url_extractor.js loaded");
+console.log("anki-everything: url_extractor.js loaded");
 
 chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
   if (request.type === RequestType.URL) {

@@ -133,6 +133,7 @@ if (!url) {
     await chrome.storage.local.set({AECardInfo: {
       sourceText: text,
       numCards: numCardsParsed > 0 ? numCardsParsed : undefined,
+      cards: null
     }});
     const url : string = chrome.runtime.getURL("select_cards.html");
     chrome.tabs.create({ url });
