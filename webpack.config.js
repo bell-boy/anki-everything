@@ -11,6 +11,8 @@ export default {
   entry: {
     popup: './src/popup.ts',
     url_extractor: './src/url_extractor.ts',
+    select_cards: './src/select_cards.ts',
+    options: './src/options.ts',
     // Add background script when you create it
     // background: './src/background.ts',
   },
@@ -59,6 +61,16 @@ export default {
       template: 'src/popup.html',
       filename: 'popup.html',
       chunks: ['popup'],
+    }),
+    new HtmlWebpackPlugin({
+      template: 'src/select_cards.html',
+      filename: 'select_cards.html',
+      chunks: ['select_cards'],
+    }),
+    new HtmlWebpackPlugin({
+      template: 'src/options.html',
+      filename: 'options.html',
+      chunks: ['options'],
     }),
   ]
 };

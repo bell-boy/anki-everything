@@ -1,6 +1,9 @@
 {
   "manifest_version": 3,
   "name": "anki-everything",
+  "permissions": [
+    "storage"
+  ],
   "version": "0.0.0",
   "action": {
     "default_popup": "popup.html",
@@ -12,5 +15,6 @@
       "js": ["url_extractor.js"],
       "type": "module"
     }
-  ]
+  ],
+  "options_page": "options.html"
 }

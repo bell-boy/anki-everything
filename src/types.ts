@@ -1,3 +1,4 @@
+import { z } from "zod";
 // Message interfaces for communication between popup, content script, and background script
 
 export enum RequestType {
@@ -53,6 +54,12 @@ interface UserInformation {  // Fixed typo from 'userInfromation'
   maxGenerationTries: number; // some sane default
 }
 
+
+// Model Zod output Schema's
+const CardResponseSchema = z.object({
+  cards: z.array(z.string())
+})
+
 // Export all interfaces
 export type {
   URLRequest,
@@ -64,3 +71,7 @@ export type {
   PublishCardsResponse,
   UserInformation,
 };
+
+export {
+  CardResponseSchema
+}
