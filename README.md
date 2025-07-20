@@ -1,6 +1,8 @@
 # anki-everything
 
-tiny project to 
-1. practice working with my buddy claude
-2. understand web dev better
-3. retain what i learn
+tiny project to anki pdfs and webpages. uses anki connect and o3 to generate high quality flashcards.
+
+roadmap:
+- [ ]: improved card selection ui (main feature is text editing cards)
+- [ ]: price estimation
+- [ ]: webpage support
